@@ -1,0 +1,114 @@
+.form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(182, 182, 182);;
+    width: 38rem;
+    border-radius: 12px;
+}
+
+#fname,
+#lname {
+    width: 17rem;
+    margin-bottom: 12px;
+    border: 2px solid rgb(233, 228, 228);
+    border-radius: 3px;
+    outline: none;
+    padding: 4px 2px;
+}
+
+#email,
+.bio {
+    width: 34.7rem;
+    margin-bottom: 12px;
+    border: 2px solid rgb(233, 228, 228);
+    border-radius: 3px;
+    outline: none;
+    padding: 4px 2px;
+}
+
+#pwd,
+#cpwd {
+    width: 17rem;
+    margin-bottom: 12px;
+    border: 2px solid rgb(233, 228, 228);
+    border-radius: 3px;
+    outline: none;
+    padding: 4px 2px;
+}
+
+
+#income {
+    width: 17rem;
+    border: 2px solid rgb(233, 228, 228);
+    border-radius: 3px;
+    outline: none;
+    padding: 4px 2px;
+}
+
+#range {
+    width: 14.7rem;
+}
+
+.gender,
+.hobbies {
+    margin-bottom: 12px;
+}
+
+.range,
+.income,
+.profile,
+.age {
+    margin-bottom: 12px;
+}
+
+.age {
+    width: 17rem;
+    border: 2px solid rgb(233, 228, 228);
+    border-radius: 3px;
+    outline: none;
+    padding: 4px 2px;
+}
+
+.button {
+    margin-bottom: 0px;
+    background-color: rgb(227, 227, 227);
+    padding: 13px 17rem;
+    border-top: 2px solid rgb(182, 182, 182);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.title_container {
+    background-color: rgb(227, 227, 227);
+    border-bottom: 2px solid rgb(182, 182, 182);
+    padding: 0 12.3rem;
+    margin-bottom: 12px;
+    color: rgb(108, 106, 106);
+    font-family: sans-serif;
+    font-size: 14.5px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.form_elements {
+    font-family: sans-serif;
+    color: rgb(50, 196, 179);
+}
+
+.range_btn {
+    color: #fff;
+    font-size: 18px;
+    background-color: rgb(50, 196, 179);
+    border: none;
+    border-radius: 3px;
+}
+
+.btn {
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(50, 196, 179);
+    font-size: 15px;
+    padding: 9px;
+}

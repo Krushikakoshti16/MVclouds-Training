@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+<body>
+    <input type="text" name="" id="box1" value="1000">
+    <input type="text" name="" id="box2" value="12">
+    <input type="button" value="submit" onclick="val()">
+    <br><br><br>
+    <span>num_of_digits(1000):</span>
+    <span id="ans1"></span>
+    <br><br><br>
+    <span>num_of_digits(12):</span>
+    <span id="ans2"></span>
+</body>
+<Script>
+    function val(){
+        var x=document.getElementById("box1").value;
+        var a=x.length;
+        var y=document.getElementById("box2").value;
+        var b=y.length;
+        
+        // console.log(y);
+        document.getElementById('ans1').innerHTML=a
+        document.getElementById('ans2').innerHTML=b
+    }
+
+</Script>
+</html>

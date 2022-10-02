@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter a string:</label>
+    <input type="text" id="txt">
+    <label for="">enter a row:</label>
+    <input type="text" id="txt2">
+    <input type="button" value="submit" onclick="val()">
+    <br><br>
+    <div>Final String:</div>
+    <span id="ans"></span>
+</body>
+<script>
+    function val(){
+        var str= document.getElementById("txt").value;
+        var row=document.getElementById("txt2").value;
+        const result= [];
+        if(row==1){
+            console.log(str);
+        }
+
+        for(var i=0;i<row;i++){
+            let j=i;
+            while(j < str.length){
+                result.push(str[j]);
+                if(i!== 0 && i!==row-1){
+                    const k= (row -i) *2 -1-1+j;
+                    if(k <str.length){
+                        result.push(str[k]);
+                    }
+                }
+                j+= row *2 -1 -1;
+                var r2= result.join('');
+            }
+            
+            // console.log(r2);
+        }
+        console.log(r2);
+
+
+    }
+    
+
+</script>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <style>
+        label{
+            color:rgb(104, 156, 216);
+            font-weight: bold;
+        }
+        button{
+            background-color: rgb(104, 156, 216);
+        }
+        h2{
+            height: 30px;
+            width: 255px;
+            /* background-color: lightgray; */
+        }
+        table{
+            border:1px solid gray ;
+        }
+        body{
+            border:1px solid gray ;
+            border-radius: 2%;
+            width:400px ;
+            margin-left: 450px;
+            margin-top: 50px;
+        }
+        
+        
+        
+    
+    </style>
+</head>
+<body>
+    <center><table>
+        <thead>
+            <h2>Create Account</h2>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="FN">First Name*</label><br>
+                    <input type="text" id="FN" placeholder="enter your first name" required>
+                </td>
+                <td>
+                    <label for="LN">Last Name*</label><br>
+                    <input type="text" id="LN" placeholder="enter your last name">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <label for="Email">Email*</label><br>
+                    <input type="email" id="Email" required style="width: 375px;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="password">Password*</label><br>
+                    <input type="password" id="password" placeholder="enter your password" required>
+                </td>
+                <td>
+                    <label for="LN">Confirm Password*</label><br>
+                    <input type="password" id="LN" placeholder="enter your password again">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Gender:</label><br>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender"> 
+                    <label for="female">Female</label>
+                </td>
+                <td>
+                    <label for="">Hobbies</label><br>
+                    <input type="checkbox">
+                    <label for="">Music</label>
+                    <input type="checkbox"> 
+                    <label for="">Sport</label>
+                    <!-- <input type="checkbox"> 
+                    <label for="">Travel</label> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Source of Income</label><br>
+                    <select name="" id="" style="width:175px;">
+                        <option value="">employed</option>
+                        <option value="">employed</option>
+                        <option value="">employed</option>
+                        <option value="">employed</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="">Income</label><br>
+                    <!-- <input type="range" name="" id="" min="1" max="20K" oninput="rangeValue.innertext=this.value"> 
+                    <p id="rangeValue">20k</p> -->
+                    <input type="range" min="0" max="200" value="20" oninput="rangeValue.innerText = this.value">
+                    <span id="rangeValue">20</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Upload Profile Picture</label><br>
+                    <input type="file" name="" id=""  style="width: 200px;">
+                </td>
+                <td>
+                    <label for="age">age</label><br>
+                    <input type="text" id="age" required value="18">
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">Bio</label><br>
+                    <!-- <input type="textarea" name="" id=""> -->
+                    <textarea name="" id="" cols="50" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button style="float: right;margin-right: 10px;">Create</button>
+                </td>
+            </tr>
+
+        </tbody>
+        
+
+    </table></center>
+    
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        #btn{
+            width: 56px;
+            height: 35px;
+        }
+        #btn2{
+            width: 35px;
+            height: 35px;
+        }
+        #txtarea{
+            height: 25px;
+        }
+        #clr{
+            height: 30px;
+            width: 35px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" cellspacing="0" height="200px">
+        <tr>
+            <td colspan="3"><input type="disply-box" name="" id="txtarea"></td>
+            <td><input type="button" value="c" id="clr" onclick="clr()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="val('1')" id="btn"></td>
+            <td><input type="button" value="2" onclick="val('2')" id="btn"></td>
+            <td><input type="button" value="3" onclick="val('3')" id="btn"></td>
+            <td><input type="button" value="+" onclick="val('+')" id="btn2"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="val('4')" id="btn"></td>
+            <td><input type="button" value="5" onclick="val('5')" id="btn"></td>
+            <td><input type="button" value="6" onclick="val('6')" id="btn"></td>
+            <td><input type="button" value="-" onclick="val('-')" id="btn2"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="val('7')" id="btn"></td>
+            <td><input type="button" value="8" onclick="val('8')" id="btn"></td>
+            <td><input type="button" value="9" onclick="val('9')" id="btn"></td>
+            <td><input type="button" value="*" onclick="val('*')" id="btn2"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." onclick="val('.')" id="btn"></td>
+            <td><input type="button" value="0" onclick="val('0')" id="btn"></td>
+            <td><input type="button" value="=" onclick="res()" id="btn"></td>
+            <td><input type="button" value="/" onclick="val('/')" id="btn2"></td>
+        </tr>
+    </table>
+    
+</body>
+<script>
+    function clr(){
+        document.getElementById("txtarea").value="";
+        }
+
+    function val(value){
+        document.getElementById("txtarea").value += value;
+    }
+
+    function res(){
+        var x = document.getElementById("txtarea").value;
+        var y = eval(x);
+        document.getElementById("txtarea").value = y;
+    }
+</script>
+</html>

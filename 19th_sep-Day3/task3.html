@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+</head>
+<body>
+    <label for="">Enter a String</label>
+    <input type="text" name="" id="txt">
+    <input type="button" value="submit" onclick="str()">
+    <br><br>
+    <span>String includes ee:</span>
+    <span id="val"></span>
+    
+</body>
+<script>
+    function str(){
+        var x= document.getElementById("txt").value;
+        if(x.includes("ee")){
+            // console.log("true");
+            document.getElementById("val").innerHTML="true"
+        }
+        else{
+            // console.log("false");
+            document.getElementById("val").innerHTML="false"
+        }
+        
+
+        
+    }
+
+</script>
+</html>

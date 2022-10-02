@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ddd{
+            width: 200px;
+            height: 200px;
+        }
+        .main{
+            width: 1240px;
+            border: 2px solid black;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: 20px;
+        }
+        #img,#img2{
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        #submit{
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+
+        .main2{
+            width: 1240px;
+            border: 2px solid black;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: 20px;
+
+        }
+    
+        
+        
+        
+    </style>
+</head>
+<body>
+    
+        
+        <div class="main" ondrop="drop(event)" ondragover="allowDrop(event)"  ondragstart="drag(event)">
+            <input type="file" id="img" accept="image/*">
+            <br><br>
+            <button type="submit" id="submit" onclick="val()">upload</button>
+            <div id="d3" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+            
+            </div>
+        </div>
+        <div class="main2" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="drag(event)" >
+            <input type="file" id="img2" accept="image/*">
+            <br><br>
+            <button type="submit" id="submit"  onclick="val2()">upload</button>
+            <div id="d2" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+            
+            </div>
+        </div>
+       
+
+
+    
+     
+    
+    
+   
+
+    <script>
+        function val(){
+            var image = document.getElementById("img");
+            var img = document.createElement('img');
+            var path = URL.createObjectURL(image.files[0])
+            img.src = path;
+            img.id='ddd';
+            document.getElementById('d3').appendChild(img); 
+        }
+
+        function val2(){
+            var image2 = document.getElementById("img2");
+            var img2 = document.createElement('img');
+            var path2 = URL.createObjectURL(image2.files[0])
+            img2.src = path2;
+            img2.id='ddd';                  
+            console.log(path2);
+            
+
+            document.getElementById('d2').appendChild(img2); 
+        }
+        
+    </script>
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    font-family: 'Roboto Slab', serif;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    margin-left: 30px;
+}
+
+#home{
+    margin-left: 800px;
+    color: white;
+}
+#home:hover{
+    color: black;
+    border: 0.5px solid balck;
+    background-color: white;
+}
+#regi{
+    color: white;
+}
+#regi:hover{
+    color: black;
+    border: 0.5px solid balck;
+    background-color: white;
+}
+.navbar-dark .navbar-brand {
+    color: whitesmoke;
+    margin-left: 50px;
+    font-weight: bolder;
+    font-size: 25px;
+
+}
+.main{
+    background-image: url(home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 99vh;
+}
+#form{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 400px;
+    margin-left: 450px;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: rgb(255, 241, 241);
+}
+.dd{
+    border: 1px solid rgb(31, 109, 89) ;
+    background-color: rgb(45, 134, 115);
+    margin: 15px;
+    height: 45px;
+}
+.dd .fa-user{
+    margin: 10px;
+    color: white;
+}
+.dd .fa-key{
+    margin: 7px;
+    color: white;
+
+}
+.dd input{
+    width: 268.5px;
+    height: 43px;
+    padding-left: 15px;
+    background-color:   rgb(231, 219, 219);
+    outline: none;
+}
+#sub_btn{
+    width: 310px;
+    margin-left: 16px;
+    height: 43px;
+    background-color:rgb(45, 134, 115) ;
+    color: white;
+    font-weight: bolder;
+    outline: none;
+}
+#sub_btn:hover{
+    border: 3px solid darkgrey;
+}
+#login{
+    color: black;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+#login:hover{
+    color: gray;
+}

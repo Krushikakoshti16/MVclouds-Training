@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+</head>
+<body>
+    <label for="">enter a number:</label>
+    <input type="number" id="txt">
+    <input type="button" value="enter" onclick="num()">
+    <br><br>
+    <span>removeLeadingTrailing:</span>
+    <span id="ans"></span>
+</body>
+<script>
+    function num(){
+        var x= document.getElementById("txt").value;
+        var y=parseFloat(x);
+        // console.log(typeof(y));
+        // var z = Number(y).toString();
+        var z = (y*1);
+        // console.log(z);
+        document.getElementById("ans").innerHTML=z;
+        
+        
+    
+    }
+
+</script>
+</html>

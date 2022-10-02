@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="txt">
+    <input type="button" value="submit" onclick="val()">
+    <br><br>
+    <div>final string:</div>
+    <span id="result"></span>
+    
+</body>
+<script>
+    function val(){
+        var str= document.getElementById("txt").value;
+        var arr= str.split("");
+        let map1= new Map([
+            ['a',1],
+            ['A',2],
+            ['b',3],
+            ['B',4],
+            ['c',5],
+            ['C',6],
+            ['d',7],
+            ['D',8],
+            ['e',9],
+            ['E',10],
+            ['f',11],
+            ['F',12],
+            ['g',13],
+            ['G',14],
+            ['h',15],
+            ['H',16],
+            ['i',17],
+            ['I',18],
+            ['j',19],
+            ['J',20],
+            ['k',21],
+            ['K',22],
+            ['l',23],
+            ['L',24],
+            ['m',25],
+            ['M',26],
+            ['n',27],
+            ['N',28],
+            ['o',29],
+            ['O',30],
+            ['p',31],
+            ['P',32],
+            ['q',33],
+            ['Q',34],
+            ['r',35],
+            ['R',36],
+            ['s',37],
+            ['S',38],
+            ['t',39],
+            ['T',40],
+            ['u',41],
+            ['U',42],
+            ['v',43],
+            ['V',44],
+            ['w',45],
+            ['W',46],
+            ['x',47],
+            ['X',48],
+            ['y',49],
+            ['Y',50],
+            ['z',51],
+            ['Z',52]
+          
+           
+           
+            ] )
+            arr.sort(function(a, b) {
+                return map1.get(a) - map1.get(b);
+            });
+            // console.log(arr.join(""));
+            document.getElementById("result").innerHTML=arr.join("");
+        
+        
+    }
+
+</script>
+</html>

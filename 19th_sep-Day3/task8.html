@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task8</title>
+</head>
+<body>
+    <label for="">enter a string:</label>
+    <input type="text" id="txt">
+    <input type="button" value="submit" onclick="str()">
+    <br><br>
+    <span id="ans"></span>
+    
+</body>
+<script>
+    function str(){
+        var x= document.getElementById("txt").value;
+        console.log(x);
+        // var i= x.length;
+        var count= 0
+        for(var i=0;i<=x.length-1;i++){
+            if('aeiouAEIOU'.includes(x[i])){
+                count += 1;
+                // console.log(vowelsCount);
+            }
+            
+        }
+        // console.log(vowelsCount);
+        document.getElementById("ans").innerHTML= "total number of vowels:" +count;
+
+        
+    }
+</script>
+
+</html>

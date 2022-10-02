@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form2.css">
+</head>
+
+
+<body>
+    <center><div class="form_container">
+        <div class="title_container">
+            <h1>Create Account</h1>
+        </div>
+        <div class="form_elements">
+            <table>
+                <tr>
+                    <td>
+                        <label for="fname">First Name*</label><br>
+                        <input type="text" name="fname" id="fname" placeholder="enter your first name">
+                    </td>
+                    <td>
+                        <label for="lname">Last Name*</label><br>
+                        <input type="text" name="lname" id="lname" placeholder="enter your last name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="email">Email*</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pwd">Password*</label><br>
+                        <input type="password" id="pwd" name="pwd" placeholder="enter your password">
+                    </td>
+                    <td>
+                        <label for="cpwd">Confirm Password*</label><br>
+                        <input type="password" id="cpwd" name="cpwd" placeholder="enter your password again">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Gender" id="Gender">Gender</label><br>
+                        <input type="radio" class="gender" id="male" name="Gender" value="Male">
+                        <label for="Male" style="color: rgb(112, 111, 111);">Male</label>
+                        <input type="radio" class="gender" id="female" name="Gender" value="Female">
+                        <label for="Male" style="color: rgb(112, 111, 111);">Female</label><br>
+                    </td>
+                    <td>
+                        <label for="Hobbies" id="Hobbies">Hobbies</label><br>
+                        <input type="checkbox" class="hobbies" id="Music" name="Music" value="Music">
+                        <label for="Music" style="color: rgb(112, 111, 111);">Music</label>
+                        <input type="checkbox" class="hobbies" id="sports" name="sports" value="sports">
+                        <label for="sports" style="color: rgb(112, 111, 111);">Sports</label>
+                        <input type="checkbox" class="hobbies" id=" Travel" name="Travel" value="Travel">
+                        <label for="Travel" style="color: rgb(112, 111, 111);">Travel</label>
+                        <input type="checkbox" class="hobbies" id=" Movies" name="Movies" value="Movies">
+                        <label for="Movies" style="color: rgb(112, 111, 111);">Movies</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lang">Source of Income</label><br>
+                        <select name="income" id="income" class="income">
+                            <option value="Employed">Employed</option>
+                            <option value="Manager">Manager</option>
+                            <option value="HR">HR</option>
+                            <option value="Developer">Developer</option>
+                            <option value="Marketer">Marketer</option>
+                    </td>
+                    <td>
+                        <label for="Income">Income</label><br>
+                        <input type="range" min="" max="" value="20K" id="range" class="range" oninput="range()">
+                        <button type="Button" value="20k" class="range_btn" id="demo">20K</button>
+                        <!-- <input type="range" min="0" max="200" value="20" oninput="rangeValue.innerText = this.value">
+                        <span id="rangeValue">20</span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Profile">Upload Profile Picture</label><br>
+                        <input type="file" id="myFile" name="filename" class="profile">
+                    </td>
+                    <td>
+                        <label for="Age">Age</label><br>
+                        <input type="number" id="age" name="age" min="18" max="80" class="age">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="Bio">Bio</label><br>
+                        <textarea id="bio" name="bio" rows="4" cols="50" class="bio"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="button">
+            <button class="btn" type="button">Create</button>
+        </div>
+    </div></center>
+
+    <script>
+        var rangeSlider= document.getElementById('range');
+        var output = document.getElementById('demo');
+        var experience = document.getElementById("experience")
+        
+        function range(){
+            document.getElementById("demo").innerHTML=rangeSlider.value;
+            rangeLabel.innerText = experience.value + "k";
+        }
+        
+    </script>
+</body>
+
+</html>

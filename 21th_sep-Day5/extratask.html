@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<body>
+    <input type="range" min="0" max="1000" value="0" id="s1" oninput="val.innerText = this.value" onclick="drop()"> &nbsp;&nbsp;
+    <span id="val">0</span> 
+    <br><br>
+    
+    <span>Cold</span>
+    <input type="range" min="0" max="1000" value="500" id="s2">
+    <span>Hot</span> 
+    <br><span style="margin-left:80px ;">Warm</span>
+    <br><br>
+    <span>Cold drink</span>
+    <input type="range" min="0" max="1000" value="500" id="s3">
+    <span>Hot Drink </span>
+
+</body>
+<script>
+    function drop(){
+        var slider= document.getElementById("s1").value
+        if(slider<=350){
+            // console.log("true");
+            document.getElementById("s2").value=0 
+            document.getElementById("s3").value=1000
+        }
+        else if(slider>350 && slider<=700){
+            // console.log("m");
+            document.getElementById("s2").value=500 
+            document.getElementById("s3").value=1000
+        }
+        
+        else {
+            // console.log("false");
+            document.getElementById("s2").value=1000 
+            document.getElementById("s3").value=0
+        }
+        
+    }
+
+
+
+</script>
+</html>

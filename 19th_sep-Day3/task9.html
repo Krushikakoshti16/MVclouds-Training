@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task9</title>
+</head>
+<body>
+    <label for="">Enter a String:</label>
+    <input type="text" name="" id="txt">
+    <input type="button" value="submit" onclick="fun()">
+    <span id="ans"></span>
+    
+</body>
+<script>
+        function fun(){
+            var x = document.getElementById("txt").value;
+            var y = x.length;
+            var z = x.split("");
+            var c = []; 
+            var l = []
+            for(var i=0; i< y;i++){
+                if(z[i] == z[i].toUpperCase()){
+                    c.push(z[i]);
+                }
+                if (z[i] == z[i].toLowerCase()){
+                l.push(z[i]);
+            }
+            }
+                var a = c.join("").concat(l.join(""));
+                document.getElementById("ans").innerHTML= a;
+        }
+</script>
+</html>

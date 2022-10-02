@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+</head>
+<body>
+    <label for="">Enter a string:</label>
+    <input type="text" id="txt">
+    <input type="button" value="submit" onclick="val()">
+    <br><br>
+    <div>Final String:</div>
+    <span id="ans"></span>
+</body>
+<script>
+    function val(){
+        var x= document.getElementById("txt").value;
+        // var y= x.split();
+        for(var i=0; i<=x.length; i++){
+            var a= x.charCodeAt(i)
+            if(a%2==0){
+                x= x.split("");
+                x[i] = x[i].toUpperCase();
+                x= x.join('')
+            }
+            else{
+                x= x.split("");
+                x[i] = x[i].toLowerCase();
+                x= x.join('')  
+            }
+            document.getElementById("ans").innerHTML= x;
+        }
+    }
+</script>
+</html>
